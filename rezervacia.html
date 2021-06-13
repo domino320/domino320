@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" >
+  <link rel="stylesheet" href="css.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Biliard Club Café</title>
+<style>
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>Biliard Club-Café</h1>
+</div>
+
+<div class="menu">
+<a href="index.html">Úvod</a>
+<a href="turnaje.html">Turnaje</a>
+<a class="active" href="rezervacia.html">Rezervácia</a>
+<a href="galeria.html">Galéria</a>
+<a href="vysledky.html">Výsledky</a>
+<a href="cennik.html">Cenník</a>
+<a href="kontakt.html">Kontakt</a>
+<a href="login/registration.php" style="float:right">Zaregistrovať sa</a>
+<a href="login/login.php" style="float:right">Prihlásiť sa</a>
+</div>
+
+<div class="polia">
+<div class="lavastrana">
+  <div class="card">
+    <h1>Rezervácia</h1>
+    <div class="stlpcerezerve">
+    <form action="action.php" method="post">
+      <p>Vaše meno: <input type="text" name="name" required/></p>
+      <p>Vaše priezvisko: <input type="text" name="surname" required /></p>
+      <p>Váš email: <input type="email" name="email" required /></p>
+      <div class="flex">
+        <label for="pohlavie">Pohlavie:</label>
+        <select id="pohlavie" name="pohlavie" required>
+          <option value="muž">muž</option>
+          <option value="žena">žena</option>
+        </select>
+      </div>
+      <p>Vaše telefónne číslo: <input type="number" name="number" required/></p>
+      <p>Poznámka <input type="textarea" name="textarea"/></p>
+      <input type="checkbox" id="stol1" name="stol1" value="stol1">
+      <label for="stol1"> Stôl číslo 1</label><br>
+      <input type="checkbox" id="stol2" name="stol2" value="stol2">
+      <label for="stol2"> Stôl číslo 2</label><br>
+      <input type="checkbox" id="stol3" name="stol3" value="stol3">
+      <label for="stol3"> Stôl číslo 3</label><br>
+      <input type="checkbox" id="stol4" name="stol4" value="stol4">
+      <label for="stol4"> Stôl číslo 4</label><br>
+      <input type="checkbox" id="stol5" name="stol5" value="stol5">
+      <label for="stol5"> Stôl číslo 5</label>
+      <p><input type="submit" /></p>
+     </form>
+    <img class="rezervao" src="reserve.gif"> 
+    </div>
+  </div>
+</div>
+<div class="pravastrana">
+  <div class="prava">
+    <h2>O nás</h2>
+    <div class="onas" >
+      <img class="onass" src="onas.jpg">
+    </div>
+    <p>Biliardová herňa s piatimi stolmi a snookerom,jukebox, stolný futbal, elektronické šípky, wifi-free, príjemne posedenie, rôzne akcie. Mestská liga v biliarde každú nedeľu o 14:00 hod. a turnaje počas celého roka!</p>
+  </div>
+  <div class="prava">
+    <img class="giff" src="gif.gif">
+  </div>
+  <div class="prava">
+    <h3>Zdieľajte a sledujte nás aj na Facebooku</h3>
+    <a href="https://www.facebook.com/BiliardClubCafe/" class="fa fa-facebook"></a>
+    <a href="mena/mena.php">Zadaj meno</a>
+      <a href="mena/search.php">Nájdi meno</a>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+<p>© 2021, Webový dizajn 2, Dominik Smetana (Biliard Club Café)</p>
+              <script src="aktualny cas.js"></script>
+              <script src="aktualny datum.js"></script>
+</div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

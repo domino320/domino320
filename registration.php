@@ -18,31 +18,31 @@
 </head>
 
 <body>
-<body background="biliard.jpg">
+
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <div class="login-panel panel panel-success">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Registrácia</h3>
+                    <h3 class="panel-title">Registration</h3>
                 </div>
                 <div class="panel-body">
                     <form method="POST" action="registration.php">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Prihlasovacie meno" name="name" type="text" autofocus>
+                                <input class="form-control" placeholder="Username" name="name" type="text" autofocus>
                             </div>
                             <div class="form-group">
                                 <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Heslo" name="password" type="password" value="">
+                                <input class="form-control" placeholder="Password" name="password" type="password" value="">
                             </div>
 
-                            <input class="btn btn-lg btn-success btn-block" type="submit" value="Registrovať" name="register" >
+                            <input class="btn btn-lg btn-success btn-block" type="submit" value="register" name="register" >
                         </fieldset>
                     </form>
-                    <center><b>Ste už zaregistrovaný ?</b> <br><a href="login.php">Prihláste sa tu</a></center>
+                    <center><b>Already registered ?</b> <br><a href="login.php">Login here</a></center>
                 </div>
             </div>
         </div>
@@ -64,17 +64,17 @@
         
         if($user_name == '')
         {
-            echo"<script>alert('Prosím zadajte svoje meno')</script>";
+            echo"<script>alert('Please enter the name')</script>";
             exit();//this use if first is not work then other will not show
         }
         if($user_password == '')
         {
-            echo"<script>alert('Prosím zadajte svoje heslo')</script>";
+            echo"<script>alert('Please enter the password')</script>";
             exit();
         }
         if($user_email == '')
         {
-            echo"<script>alert('Prosím zadajte svoj email')</script>";
+            echo"<script>alert('Please enter the email')</script>";
             exit();
         }
 
